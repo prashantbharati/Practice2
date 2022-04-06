@@ -20,14 +20,10 @@ function myFunction(xml) {
     xmlDoc = xml.responseXML;
     txt = "";
     x = xmlDoc.getElementsByTagName('item');
-    // for (i = 0; i < x.length; i++) { 
-    //     while (x[i].attributes.length > 0) {
-    //         attnode = x[i].attributes[0];
-    //         old_att = x[i].removeAttributeNode(attnode);
-    //         txt += "Removed: " + old_att.nodeName +
-    //         ": " + old_att.nodeValue + "<br>";
-    //     }
-    // }
+    for (i = 0; i < x.length; i++) { 
+        console.log(x[i].length);
+        // console.log(x[i].innerHTML,"lololool");
+    }
 
     console.log(x);
 
